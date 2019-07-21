@@ -1,20 +1,16 @@
-﻿ 
-@{
-    ViewData["Title"] = "Home Page version 4";
+﻿@{
+    ViewData["ReleaseVersion"] = "V - 1.0";
 }
 <div class="row">
-    <h2>Post List</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Post Id</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Author</th>
-            </tr>
-        </thead>
-        <tbody>
-             <tr><td>WELCOME TO CI/CD</td></tr>
-        </tbody>
+
+    <table class="table" style="border: solid  4px red; ">
+        <tr><td style="height:10px;"></td></tr>
+        <tr style="border: dotted 4px orange; text-align:center; background-color:antiquewhite; font-size:14pt; font-weight:400;">
+            <td>Welcome Azure DevOps CI/CD- NEW VERSION DEPLOYED</td>
+        </tr>
+        <tr><td style="height:10px;"></td></tr>
+        <tr style="border: dotted 4px orange; text-align:center; background-color:antiquewhite; font-size:14pt; font-weight:200;">
+            <td>Current Release Version of Applicaion is:   @ViewData["ReleaseVersion"] </td>
+        </tr>
     </table>
-</div>
+</div> 
